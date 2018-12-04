@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url('api-v1/', include('todos.urls')),
+    url(r'^api-v1/auth/', include('knox.urls')),
 ]
